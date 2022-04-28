@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <!--<link rel="stylesheet" href="css/bootstrap/bootstrap.css">-->
+    <script src="js/encrypt.js"></script>
+    <title>Encriptador de texto</title>
+</html>
+<body>
+
+    <div class="content">
+        <h2>Encriptador de Texto</h2>
+        <textarea id="textArea" class="textArea"></textarea>
+        <div class="advertencia">
+            <p>La encriptacion solo funciona con letras minúsculas.</p>
+        </div>
+        <div class="buttons">
+            <button class="encriptar" type="button" onClick="encriptarTexto()">Encriptar</button>
+            <button class="desencriptar"  type="button"onClick="desencriptarTexto()">Desencriptar</button>
+        </div>
+        <div id="right" class="right">
+            <p id="textoEncriptado" class="textoEncriptado"></p>
+            <div id="noTexto" class="noTexto">
+                <img src="img/serch.png">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button class="copiar" onClick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
+    <h4>Autor: Jorge Mejía</h4>
+</body>
